@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Contacts from './components/contacts/Contacts'
+import Main from './components/main/Main';
+
 
 function App() {
   return (
     <div>
-      <Contacts/>
+      <Main />
     </div>
   );
 }
