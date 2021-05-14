@@ -15,7 +15,7 @@ function App() {
         <Route exact path='/' component={Home}/>
         <Route exact path='/contacts' component={Main}/>
         {/* <Route exact path ='/contacts/:id' component={Details} /> */}
-        above is the normal way to render  route, below is only necessary if we need to pass in props manually such as blah = hello 
+        {/* above is the normal way to render  route, below is only necessary if we need to pass in props manually such as blah = hello  */}
         <Route exact path ='/contacts/:id' render={ (props)=>{ return <Details {...props} blah="hello" />} } />
       </Switch>
     </div>
