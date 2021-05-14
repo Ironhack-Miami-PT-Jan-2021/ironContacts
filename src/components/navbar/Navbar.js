@@ -1,21 +1,20 @@
 import React from 'react';
-import './Navbar.css';
+import './Navbar.css'
+import { Link } from 'react-router-dom';
 
 class Navbar extends React.Component {
 
-
     render(){
         return(
-            <div className="the-nav">
-                Currently Displaying {this.props.numberVisible} out of {this.props.totalContacts} total contacts
+            <div className="nav">
+                <Link to="/">home</Link>
+                <Link to="/contacts">Contacts</Link>
             </div>
         )
     }
 
 
+
 }
-
-
-
 
 export default Navbar;
